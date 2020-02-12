@@ -1,12 +1,16 @@
 module.exports = (sequelize, type) => {
-    return sequelize.define('movie', {
+    return sequelize.define('tv', {
         id: {
           type: type.INTEGER,
           primaryKey: true,
           autoIncrement: true
         },
-        title: type.STRING,
+        show: type.STRING,
         year:   type.INTEGER,
-        rating: type.INTEGER
+        rating: type.INTEGER,
+        season: type.INTEGER
     })
 }
+
+//addshow
+//showlist
